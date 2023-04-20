@@ -8,8 +8,6 @@
        transform: rotate(10deg);
    }
 
-
-
    /* tranformacja obrazku  */
 
    .container {
@@ -52,4 +50,63 @@
    .img3:hover {
        transform: rotate(45deg) scale(1.5);
    }
-    /* tranformacja obrazku  */
+
+    /* tranformacja przycisku  */
+    
+        .button {
+            margin-top: 100px;
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #f4f3f3;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #d63e9c;
+            cursor: pointer;
+        }
+    
+        /* Transformacja przycisku na hover */
+        .button:hover {
+            background-color: #d400aa;
+            transform: scale(1.1);
+        }
+    
+        /* Transformacja przycisku na aktywnym stanie */
+        .button:active {
+            transform: scale(0.9);
+        }
+
+    /* tranformacja menu  */
+
+        .menu {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .menu-list {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .menu-list li {
+            margin: 0 10px;
+            transform: skew(-20deg);
+        }
+    
+        .menu-list li a {
+            color: #fff;
+            display: block;
+            font-weight: bold;
+            padding: 10px;
+            text-decoration: none;
+            transform: skew(20deg);
+        }
+    
+        .menu-list li:hover a {
+            background-color: #fff;
+            color: #333;
+        }
