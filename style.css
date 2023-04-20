@@ -1,3 +1,7 @@
+.text {
+  margin-top: 300px;
+}
+
 .animacja1 {
   animation-name: zmiana-koloru;
   animation-duration: 2s;
@@ -15,6 +19,7 @@
   font-size: 48px;
   animation: slide-in 1s ease-in-out forwards;
 }
+
 
 @keyframes slide-in {
   from {
@@ -43,7 +48,9 @@
 
 
 .obraz1 {
-  margin-top: 400px;
+  display: block;
+  float: left;
+  margin-right: 10px;
   width: 300px;
   height: 200px;
   background-size: cover;
@@ -71,7 +78,9 @@
 }
 
 .obraz2 {
-  margin-top: 400px;
+  display: block;
+  float: left;
+  margin-right: 10px;
   width: 300px;
   height: 200px;
   background-size: cover;
@@ -80,17 +89,71 @@
   transition: all 0.5s ease-in-out;
 }
 
-.obraz:active {
-  transform: scale(1.2);
+.obraz2:active {
+  transform: scale(1.10);
+}
+
+.obraz3 {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/Blacked\ out\ Porsche\ 911\ GT2\ RS\ from\ Switzerland.jpg');
+  transition: filter 0.5s ease-in-out;
+}
+
+.obraz3:hover {
+  filter: brightness(150%);
+}
+
+
+.animacja-obrazow {
+  margin-top: 300px;
+  display: block;
+  overflow: hidden;
 }
 
 
 
 
+.przycisk1 {
+  font-size: 32px;
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.przycisk1:hover {
+  background-color: #16a085;
+}
+
+.przycisk2 {
+  font-size: 32px;
+  padding: 10px 20px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.przycisk2:active {
+  transform: scale(0.9);
+}
+
+.animacja-przycisk {
+  margin-top: 300px;
+  display: block;
+  overflow: hidden;
+}
+
 
 
 .animacja-menu {
-    margin-top: 600px;
     font-size: 32px;
 }
 
@@ -108,93 +171,11 @@
 .menu a {
   display: block;
   text-decoration: none;
-  color: #333;
-  font-size: 18px;
+  color: #e35d5d;
   transition: color 0.2s ease-in-out;
 }
 
 .menu a:hover {
-  color: #4CAF50;
+  color: #51ff54;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-    .animowany-przycisk {
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      transition-duration: 0.4s;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-  
-    .animowany-przycisk:hover {
-      background-color: white;
-      color: black;
-      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 24px 0 rgba(0, 0, 0, 0.19);
-    }
-  
-    .menu {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-  
-    .menu li {
-      margin-right: 20px;
-    }
-  
-    .menu a {
-      display: block;
-      text-decoration: none;
-      color: #333;
-      font-size: 18px;
-      transition: color 0.2s ease-in-out;
-    }
-  
-    .menu a:hover {
-      color: #4CAF50;
-    }
-
-  
-    .image-wrapper {
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-    }
-  
-    .image-wrapper img {
-      transition: transform 0.3s ease-out;
-    }
-  
-    .image-wrapper:hover img {
-      transform: scale(1.2);
-    }
-
-    /* transformacja tekstu */
-
-         h1 {
-           font-size: 48px;
-           transform: skewX(-20deg);
-         }
-    
-         p {
-           font-size: 24px;
-           transform: rotate(10deg);
-         }
