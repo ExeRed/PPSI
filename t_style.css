@@ -1,0 +1,58 @@
+   h1 {
+       font-size: 48px;
+       transform: skewX(-20deg);
+   }
+
+   p {
+       font-size: 24px;
+       transform: rotate(10deg);
+   }
+
+
+
+   /* tranformacja obrazku  */
+
+   .container {
+       display: block;
+       overflow: hidden;
+   }
+
+   .container img {
+       display: block;
+       float: left;
+       margin-right: 10px;
+   }
+
+   .img1 {
+       width: 200px;
+       height: 200px;
+       transition: transform 0.5s ease-in-out;
+   }
+
+   .img1:hover {
+       transform: scale(1.5);
+   }
+
+   .img2 {
+       width: 200px;
+       height: 200px;
+       transition: transform 0.5s ease-in-out;
+   }
+
+   .img2:hover {
+       transform: rotate(45deg);
+   }
+
+   .img3 {
+       width: 200px;
+       height: 200px;
+       transition: transform 0.5s ease-in-out;
+   }
+
+   .img3:hover {
+       transform: rotate(45deg) scale(1.5);
+   }
+
+
+
+    /* tranformacja obrazku  */
